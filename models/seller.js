@@ -16,6 +16,11 @@ module.exports = function(sequelize, DataTypes) {
         email: {
         type: DataTypes.STRING,
         allowNull: false,
+        isEmail: true,
+    },
+        location: {
+        type: DataTypes.STRING,
+        allowNull: false,
     },
     });
   
