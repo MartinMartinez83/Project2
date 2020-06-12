@@ -19,7 +19,6 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "2.4.3",
-    "expres": "^4.17.0",
     "express-session": "^1.16.1",
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
@@ -35,12 +34,11 @@
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
-    "mocha": "^5.2.0",
+    "mocha": "^8.0.1",
     "prettier": "^1.13.7"
   },
   "bugs": {
     "url": "https://github.com/MartinMartinez83/Project2/issues"
   },
   "homepage": "https://github.com/MartinMartinez83/Project2#readme"
-
 }
