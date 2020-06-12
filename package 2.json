@@ -1,5 +1,5 @@
 {
-  "name": "project2",
+  "name": "1-Passport-Example",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,10 +9,6 @@
     "lint": "eslint --quiet .",
     "fix": "eslint --fix .",
     "watch": "nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MartinMartinez83/Project2.git"
   },
   "keywords": [],
   "author": "",
@@ -35,13 +31,5 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
     "prettier": "^1.13.7"
-  },
-  "bugs": {
-    "url": "https://github.com/MartinMartinez83/Project2/issues"
-  },
-  "homepage": "https://github.com/MartinMartinez83/Project2#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
   }
 }
