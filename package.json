@@ -19,12 +19,14 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "2.4.3",
-    "express": "^4.17.0",
+    "expres": "^4.17.0",
     "express-session": "^1.16.1",
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^5.8.6"
+    "sequelize": "^5.8.6",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "chai": "^4.1.2",
@@ -39,9 +41,6 @@
   "bugs": {
     "url": "https://github.com/MartinMartinez83/Project2/issues"
   },
-  "homepage": "https://github.com/MartinMartinez83/Project2#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
-  }
+  "homepage": "https://github.com/MartinMartinez83/Project2#readme"
+
 }
