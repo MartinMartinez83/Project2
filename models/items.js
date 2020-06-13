@@ -13,18 +13,6 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       len: [1, 250],
     },
-    //     title: {
-    //     type: DataTypes.STRING,
-    //     allowNull: false,
-    //     validate: {
-    //       len: [1]
-    //     }
-    //   },
-    //   body: {
-    //     type: DataTypes.TEXT,
-    //     allowNull: false,
-    //     len: [1]
-    //   }
   });
 
   Items.associate = function(models) {
