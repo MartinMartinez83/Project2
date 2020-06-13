@@ -35,7 +35,36 @@ module.exports = function(app) {
     req.logout();
     res.redirect("/");
   });
-
+  // route to get all items
+  app.get("/api/items", (req, res) => {
+    let query =  {};
+    if (req.query.seller_id) {
+      query.SellerId =  req.query.seller_id;
+    }
+    db.Items.findAll({
+      where: query,
+      include: [db.Seller]
+    }).then(function(dbSeller){
+      res.json(dbSeller);
+    })
+  })
+  // route to get a spcific item
+  app.get("/api/items/:id", (req, res) => {
+    db.Items.findOne({
+      where: {
+        id: req.params.id
+      },
+      include: [db.Seller]
+    }).then(function(dbSeller){
+      res.json(dbSeller);
+    })
+  })
+//route to post an item
+app.post("/api/items", function(req, res){
+  db.Items.create(req.body).then(function(dbItems){
+    res.json.dbItems;
+  })
+})
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {
     if (!req.user) {
