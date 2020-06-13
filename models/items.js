@@ -1,18 +1,18 @@
 module.exports = function(sequelize, DataTypes) {
-    var Items = sequelize.define("Items", {
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        price: {
-            type: DataTypes.NUMBER,
-            allowNull: false,
-        },
-        description: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            len: [1,250],
-        },
+  var Items = sequelize.define("Items", {
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    price: {
+      type: DataTypes.NUMERIC,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      len: [1, 250],
+    },
     //     title: {
     //     type: DataTypes.STRING,
     //     allowNull: false,
@@ -25,16 +25,15 @@ module.exports = function(sequelize, DataTypes) {
     //     allowNull: false,
     //     len: [1]
     //   }
+  });
+
+  Items.associate = function(models) {
+    Items.belongsTo(models.Seller, {
+      foreignKey: {
+        allowNull: false,
+      },
     });
-  
-    Items.associate = function(models) {
-      Items.belongsTo(models.Seller, {
-        foreignKey: {
-          allowNull: false
-        }
-      });
-    };
-  
-    return Items;
   };
-  
+
+  return Items;
+};
