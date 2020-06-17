@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS quaranSale;
+
+CREATE DATABASE quaranSale;
