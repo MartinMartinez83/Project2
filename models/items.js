@@ -1,4 +1,4 @@
-const { STRING } = require("sequelize/types");
+
 
 module.exports = function(sequelize, DataTypes) {
   var Items = sequelize.define("Items", {
