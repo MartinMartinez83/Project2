@@ -21,7 +21,9 @@ This project creates a website called QuaranSalw where sellers can create a page
 * Questions
 
 ## Installation
-
+1. Copy the server.js, package.json, and files, then copy the config, models, public, and routes folders and the files they contain.
+2. Run npm install.
+3. Create a quaranSale empty sql database.
 
 ## Usage
 Please contact us before using this code to create your own instance of the QuaranSale website.
