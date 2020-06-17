@@ -1,6 +1,8 @@
+const { STRING } = require("sequelize/types");
+
 module.exports = function(sequelize, DataTypes) {
   var Items = sequelize.define("Items", {
-    name: {
+    itemName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -12,6 +14,12 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       len: [1, 250],
+    },
+    category: {
+      type: DataTypes.STRING,
+    },
+    photo: {
+      type: DataTypes.STRING,
     },
   });
 
