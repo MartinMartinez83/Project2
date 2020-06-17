@@ -2,3 +2,21 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+.jumbotron {
+  text-align: center;
+}
+
+.tableInput {
+  padding: 8px;
+  border: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+  border: none;
+}
+
+label {
+  font-weight: bold;
+}
