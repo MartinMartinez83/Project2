@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>QuaranSale - Create Sale</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/logout">
+          Logout
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">QuaranSale</h1>
+      <p class="lead">Shop for neighborhood garage sale treasures from the comfort and safety of your home.</p>
+    </div>
+  </div>
+  <form id="form" action="/api/items" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>Enter Your Contact Info</h2>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="contact">Contact Method</label>
+            <input type="text" class="form-control" id="contactMethod">
+            <small id="contactHelp" class="form-text text-muted">This is how buyers will contact you.</small>
+          </div>
+        </div>
+        <h2>Create Your Sale</h2>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="saleName">Sale Name</label>
+            <input type="text" class="form-control" id="saleName">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="saleDescription">Sale Description</label>
+            <textarea type="textarea" class="form-control" rows="3" id="saleDescription"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="saleItems">List Items to Sell</label>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Photo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Bookcase</td>
+                  <td>5 shelf oak bookcase</td>
+                  <td>furniture</td>
+                  <td>$25.00</td>
+                  <td>photo placeholder</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Women's Shirt</td>
+                  <td>Green ladies short sleeve t-shirt, size med</td>
+                  <td>clothing</td>
+                  <td>$5.00</td>
+                  <td>photo placeholder</td>
+                <tr>
+                  <th scope="row" class="tableInput" id="id">3</th>
+                  <td><input type="text" class="tableInput" id="name"></td>
+                  <td><input type="text" class="tableInput" id="description"></td>
+                  <td><input type="text" class="tableInput" id="category"></td>
+                  <td><input type="text" class="tableInput" id="price"></td>
+                  <td><input type="file" class="form-control-file" id="photo"></td>
+                </tr>
+                </tr>
+              </tbody>
+            </table>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+
+</body>
+
+</html>
