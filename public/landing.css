@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(255, 166, 0);
+    /* font-family: 'Gochi hand'; */
+}
+
+.logo{
+    color: white;
+    font-family: 'Gochi hand';
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+.hero-image{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(garage1.png) no-repeat center;
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* overflow: hidden; */
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+.container h1{
+    font-size: 80px;
+    letter-spacing: 0.2em;
+    font-family: 'Gochi hand';
+    font-weight: bolder;
+}
+.des{
+    margin: 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 0 0 10px black;
+}
+.btn{
+    color: #313131;
+    padding: 10px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    background: #f1f1f1;
+    border-radius: 8px;
+    transition: 0.3s all;
+}
+.btn:hover{
+    opacity: 0.8;
+    }
+
+    .testimonials{
+        padding: 40px 0;
+        background: #f1f1f1;
+        color: #434343;
+        text-align: center;
+      }
+      .inner{
+        max-width: 1200px;
+        margin: auto;
+        overflow: hidden;
+        padding: 0 20px;
+      }
+      
+      .border{
+        width: 160px;
+        height: 5px;
+        background: rgb(255, 166, 0);
+        margin: 26px auto;
+      }
+      
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .col{
+        flex: 33.33%;
+        max-width: 33.33%;
+        box-sizing: border-box;
+        padding: 15px;
+      }
+      .testimonial{
+        background: #fff;
+        padding: 30px;
+      }
+      .testimonial img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .name{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 20px 0;
+      }
+      
+      @media screen and (max-width:960px) {
+      .col{
+        flex: 100%;
+        max-width: 80%;
+      }
+      }
+      
+      @media screen and (max-width:600px) {
+      .col{
+        flex: 100%;
+        max-width: 100%;
+      }
+      }
+      
+      #container {
+          min-height: 100%;
+      }
+      #main {
+          overflow: auto;
+          padding-bottom: 100px;
+      }
+
+    #footer {
+        background-color: rgb(255, 166, 0);
+        position: relative;
+        height: 100px;
+        margin-top: -100px;
+        clear: both;
+    }
