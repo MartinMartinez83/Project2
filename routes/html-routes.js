@@ -17,7 +17,15 @@ module.exports = function(app) {
     }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
+  
+  //when user clicks on viewsale
+  app.get("/viewSale", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/viewsale.html"))
+  })
 
+  //
+
+  
   app.get("/login", (req, res) => {
     // If the user already has an account send them to the members page
     if (req.user) {
