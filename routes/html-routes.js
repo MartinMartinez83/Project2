@@ -19,9 +19,9 @@ module.exports = function(app) {
   });
   
   //when user clicks on viewsale
-  app.get("/viewSale", (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/viewsale.html"))
-  })
+  app.get("/viewsale", isAuthenticated, (req, res) => {
+    res.render("viewsale",{});
+  });
 
   //
 
@@ -40,6 +40,17 @@ module.exports = function(app) {
   app.get("/members", isAuthenticated, (req, res) => {
     res.render("members",{});
   });
+
+  //Route for search sales
+  app.get("/searchsale", isAuthenticated, (req, res) => {
+    res.render("searchsale",{});
+  });
+
+  //Route for create sales
+  app.get("/createsale", isAuthenticated, (req, res) => {
+    res.render("createsale",{});
+  });
+
   
 };
 //we need to modify this to include the new html pages, to match our html routes.  we can keep the login stuff the same because we will be using that i believe on top of it. 

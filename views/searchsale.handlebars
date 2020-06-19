@@ -1,0 +1,77 @@
+<link href="stylesheets/style.css" rel="stylesheet">
+
+<form id="form" action="/api/items">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <h2>Search for a Sale</h2>
+                        <br>
+                        <label for="cityLabel">Select a City</label>
+                        <select class="form-control" id="selectCity">
+                            <option> </option>
+                            <option>Alta</option>
+                            <option>Bluffdale</option>
+                            <option>Brighton</option>
+                            <option>Cottonwood Heights</option>
+                            <option>Draper</option>
+                            <option>Herriman</option>
+                            <option>Holladay</option>
+                            <option>Kearns</option>
+                            <option>Magna</option>
+                            <option>Midvale</option>
+                            <option>Millcreek</option>
+                            <option>Murray</option>
+                            <option>Riverton</option>
+                            <option>Salt Lake City</option>
+                            <option>Sandy</option>
+                            <option>South Jordan</option>
+                            <option>South Salt Lake</option>
+                            <option>Taylorsville</option>
+                            <option>West Jordan</option>
+                            <option>West Valley City</option>
+                        </select>
+                        <small id="contactHelp" class="form-text text-muted">Select a city to display all sales in that
+                            city.</small>
+                    </div>
+                </div>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="saleItems">Sales in Your City</label>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Sale Name</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Jon Huntsman's Sale</td>
+                                    <td>Come for the political swag, stay for the designer bags!</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Spencer Cox's Sale</td>
+                                    <td>Men's/Women's clothing, kids' toys, free surprise promo item with each sale!
+                                    </td>
+                                <tr>
+                                    <th scope="row" class="tableStore" id="id">3</th>
+                                    <td class="tableStore" id="name"></td>
+                                    <td class="tableStore" id="description"></td>
+                                </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
