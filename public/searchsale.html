@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QuaranSale - Search Sale</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <!-- <link href="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+	
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+<!--- Navigation -->
+<nav>
+    <div class="logoqs">
+        <h4>QuaranSale</h4>
+    </div>
+    <ul class="nav-links">
+        <li><a href=#>Home</a></li>
+        <li><a href=#>Post</a></li>
+        <li><a href=#>Search</a></li>
+        <li><a href=#>Login</a></li>
+    </ul>
+    <div class="burger">
+
+    </div>
+</nav>
+    <form id="form" action="/api/items">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                        <h2>Search for a Sale</h2>
+                        <br>
+                        <label for="cityLabel">Select a City</label>
+                        <select class="form-control" id="selectCity">
+                            <option> </option>
+                            <option>Alta</option>
+                            <option>Bluffdale</option>
+                            <option>Brighton</option>
+                            <option>Cottonwood Heights</option>
+                            <option>Draper</option>
+                            <option>Herriman</option>
+                            <option>Holladay</option>
+                            <option>Kearns</option>
+                            <option>Magna</option>
+                            <option>Midvale</option>
+                            <option>Millcreek</option>
+                            <option>Murray</option>
+                            <option>Riverton</option>
+                            <option>Salt Lake City</option>
+                            <option>Sandy</option>
+                            <option>South Jordan</option>
+                            <option>South Salt Lake</option>
+                            <option>Taylorsville</option>
+                            <option>West Jordan</option>
+                            <option>West Valley City</option>
+                        </select>
+                        <small id="contactHelp" class="form-text text-muted">Select a city to display all sales in that
+                            city.</small>
+                    </div>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="saleItems">Sales in Your City</label>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">Sale Name</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Jon Huntsman's Sale</td>
+                                        <td>Come for the political swag, stay for the designer bags!</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Spencer Cox's Sale</td>
+                                        <td>Men's/Women's clothing, kids' toys, free surprise promo item with each sale!</td>
+                                    <tr>
+                                        <th scope="row" class="tableStore" id="id">3</th>
+                                        <td class="tableStore" id="name"></td>
+                                        <td class="tableStore" id="description"></td>
+                                    </tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/members.js"></script>
+
+</body>
+
+</html>
