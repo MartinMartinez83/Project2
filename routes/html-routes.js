@@ -33,11 +33,13 @@ module.exports = function(app) {
     }
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
+  
 
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/members", isAuthenticated, (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/members.html"));
+    res.render("members",{});
   });
+  
 };
 //we need to modify this to include the new html pages, to match our html routes.  we can keep the login stuff the same because we will be using that i believe on top of it. 
