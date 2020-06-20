@@ -29,7 +29,13 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false,
       },
     });
+    Items.belongsTo(models.Cities, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
   };
+
 
   return Items;
 };
