@@ -63,7 +63,14 @@ module.exports = function(app) {
   })
 //route to post an item
 app.post("/api/items", function(req, res){
-  db.Items.create(req.body).then(function(dbItems){
+  db.Items.create({
+    itemName: req.body.itemName,
+    price: req.body.price,
+    description: req.body.description,
+    category: req.body.category,
+    photo: req.body.photo,
+  }
+    ).then(function(dbItems){
     res.json(dbItems);
   })
 })
