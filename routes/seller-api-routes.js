@@ -21,7 +21,13 @@ module.exports = function(app) {
   });
 
   app.post("/api/sellers", function(req, res) {
-    db.Seller.create(req.body).then(function(dbSeller) {
+    db.Seller.create({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      phoneNumber: req.body.phoneNumber,
+      email: req.body.email,
+      location: req.body.location
+    }).then(function(dbSeller) {
       res.json(dbSeller);
     });
   });
