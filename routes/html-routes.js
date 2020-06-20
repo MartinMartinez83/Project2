@@ -23,6 +23,10 @@ module.exports = function(app) {
     res.render("viewsale",{});
   });
 
+  app.get("/viewsale2", isAuthenticated, (req, res) => {
+    res.render("viewsale2",{});
+  });
+
   //
 
   
