@@ -21,9 +21,10 @@ nav{
 .nav-link{
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 100%;
     color: white;
-    font-size: large;
+    font-size: medium;
+    font-weight: 700;
 }
 
 
@@ -33,50 +34,46 @@ body,html{
     padding: 0;
     background: #f1f1f1;
 }
-.jumbotron{
-    position: relative;
-    height: 500px;
-    overflow: hidden;
-    background: url(garage1.png) no-repeat center;
-    background-size: cover;
-}
-/* .container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    /* overflow: hidden; 
-    text-align: center;
-    color: white;
-    font-weight: 700;
-} */
 
-/* .container h1{
-    font-size: 80px;
-    letter-spacing: 0.2em;
-    font-family: 'Gochi hand';
-    font-weight: bolder;
-    color: white;
-} */
-/* .des{
-    margin: 20px;
-    display: block;
-    font-size: 20px;
-    font-weight: bolder;
-    text-shadow: 0 0 10px black;
-} */
-.btn{
-    color: #313131;
-    padding: 10px 24px;
-    font-size: 20px;
-    text-decoration: none;
-    background: #f1f1f1;
-    border-radius: 8px;
-    transition: 0.3s all;
+#home{
+  background-image: url("garage1.png");
+  display: table;
+  height: 75%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-color: white;
 }
-.btn:hover{
-    opacity: 0.8;
-    }
+.landing-text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.landing-text h1{
+  font-size: 700%;
+  font-weight: 500;
+  font-family: 'Gochi hand';
+  color: white;
+}
+.landing-text h3{
+  color: white;
+  font-weight: 700;
+}
+.landing-text a{
+  background-color: white;
+}
+#fixed{
+  background-image: url("./garage3.jpg");
+  display: table;
+  height: 50%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+
+
+
 
     .testimonials{
         padding: 40px 0;
@@ -124,20 +121,6 @@ body,html{
         margin: 20px 0;
       }
       
-      @media screen and (max-width:960px) {
-      .col{
-        flex: 100%;
-        max-width: 80%;
-      }
-      }
-      
-      @media screen and (max-width:600px) {
-      .col{
-        flex: 100%;
-        max-width: 100%;
-      }
-      }
-      
       #container {
           min-height: 100%;
       }
@@ -163,3 +146,21 @@ body,html{
     label {
       font-weight: bold; 
     }
+
+    footer{
+      width: 100%;
+      background-color: rgb(255, 166, 0);
+      padding: 2% 2% 2% 2%;
+      color: white;
+    }
+    .fa{
+      padding: 15px;
+      font-size: 25px;
+      color: white;
+    }
+
+    footer h1{
+      font-family: 'Gochi hand';
+      font-size: 60px;
+    }
+    
