@@ -1,90 +1,114 @@
 <link href="stylesheets/style.css" rel="stylesheet">
-
-<form id="form" action="/api/items" >
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <h2>Enter Your Contact Info</h2>
-        <br>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="city">City</label>
-            <input type="text" class="form-control" id="city">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <label for="contact">Contact Method</label>
-            <input type="text" class="form-control" id="contactMethod">
-            <small id="contactHelp" class="form-text text-muted">This is how buyers will contact you.</small>
-          </div>
-        </div>
-        <h2>Create Your Sale</h2>
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <label for="saleName">Sale Name</label>
-            <input type="text" class="form-control" id="saleName">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <label for="saleDescription">Sale Description</label>
-            <textarea type="textarea" class="form-control" rows="3" id="saleDescription"></textarea>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <label for="saleItems">List Items to Sell</label>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">Id</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Category</th>
-                  <th scope="col">Price</th>
-                  <th scope="col">Photo</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Bookcase</td>
-                  <td>5 shelf oak bookcase</td>
-                  <td>furniture</td>
-                  <td>$25.00</td>
-                  <td>photo placeholder</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Women's Shirt</td>
-                  <td>Green ladies short sleeve t-shirt, size med</td>
-                  <td>clothing</td>
-                  <td>$5.00</td>
-                  <td>photo placeholder</td>
-                <tr>
-                  <th scope="row" class="tableInput" id="id">3</th>
-                  <td><input type="text" class="tableInput" id="name"></td>
-                  <td><input type="text" class="tableInput" id="description"></td>
-                  <td><input type="text" class="tableInput" id="category"></td>
-                  <td><input type="text" class="tableInput" id="price"></td>
-                  <td><input type="file" class="form-control-file" id="photo"></td>
-                </tr>
-                </tr>
-              </tbody>
-            </table>
-            <div class="form-row">
-              <div class="form-group col-md-12">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
+<br>
+<form id="form" action="/api/items">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h1 class="formTitle">Create a Sale</h1>
+                <br>
+                <h3>Enter Your Contact Info:</h3>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="city">City</label>
+                        <select class="form-control" id="selectCity">
+                            <option> </option>
+                            <option>Alta</option>
+                            <option>Bluffdale</option>
+                            <option>Brighton</option>
+                            <option>Cottonwood Heights</option>
+                            <option>Draper</option>
+                            <option>Herriman</option>
+                            <option>Holladay</option>
+                            <option>Kearns</option>
+                            <option>Magna</option>
+                            <option>Midvale</option>
+                            <option>Millcreek</option>
+                            <option>Murray</option>
+                            <option>Riverton</option>
+                            <option>Salt Lake City</option>
+                            <option>Sandy</option>
+                            <option>South Jordan</option>
+                            <option>South Salt Lake</option>
+                            <option>Taylorsville</option>
+                            <option>West Jordan</option>
+                            <option>West Valley City</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="contact">Contact Method</label>
+                        <input type="text" class="form-control" id="contactMethod">
+                        <small id="contactHelp" class="form-text text-muted">This is how buyers will contact
+                            you.</small>
+                    </div>
+                </div>
+                <h3>Create Your Sale:</h3>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="saleName">Sale Name</label>
+                        <input type="text" class="form-control" id="saleName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="saleDescription">Sale Description</label>
+                        <textarea type="textarea" class="form-control" rows="3" id="saleDescription"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="saleItems">List Items to Sell</label>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Photo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Bookcase</td>
+                                    <td>5 shelf oak bookcase</td>
+                                    <td>furniture</td>
+                                    <td>$25.00</td>
+                                    <td>photo placeholder</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Women's Shirt</td>
+                                    <td>Green ladies short sleeve t-shirt, size med</td>
+                                    <td>clothing</td>
+                                    <td>$5.00</td>
+                                    <td>photo placeholder</td>
+                                <tr>
+                                    <th scope="row" class="tableInput" id="id">3</th>
+                                    <td><input type="text" class="tableInput" id="name"></td>
+                                    <td><input type="text" class="tableInput" id="description"></td>
+                                    <td><input type="text" class="tableInput" id="category"></td>
+                                    <td><input type="text" class="tableInput" id="price"></td>
+                                    <td><input type="file" class="form-control-file" id="photo"></td>
+                                </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </form>

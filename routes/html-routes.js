@@ -7,11 +7,9 @@ const isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function(app) {
 //send them directly to the landing page
   app.get("/", (req, res) => {
-    res.render("landing",{})
-  })
-
- 
-
+    res.render("landing",{});
+  });
+  
   app.get("/signup", (req, res) => {
     // If the user already has an account send them to the members page
     if (req.user) {
