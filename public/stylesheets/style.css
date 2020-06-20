@@ -20,3 +20,9 @@ input[type=text]:focus {
 label {
   font-weight: bold;
 }
+
+.formTitle {
+  text-align: center;
+  font-family: 'Gochi hand';
+  font-size: 65px;
+}
