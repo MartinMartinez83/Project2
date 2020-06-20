@@ -10,31 +10,22 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: rgb(255, 166, 0);
-    /* font-family: 'Gochi hand'; */
+    text-decoration: none;
+}
+.navbar-brand{
+  font-family: 'Gochi hand';
+  text-decoration: none;
+  align-items: flex-start;
 }
 
-.logoqs{
-    color: white;
-    font-family: 'Gochi hand';
-    letter-spacing: 5px;
-    font-size: 30px;
-}
-
-.nav-links{
+.nav-link{
     display: flex;
     justify-content: space-around;
     width: 30%;
-}
-.nav-links li{
-    list-style: none;
-}
-.nav-links a{
     color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 15px;
+    font-size: large;
 }
+
 
 body,html{
     height: 100%;
@@ -42,37 +33,38 @@ body,html{
     padding: 0;
     background: #f1f1f1;
 }
-.hero-image{
+.jumbotron{
     position: relative;
     height: 500px;
     overflow: hidden;
     background: url(garage1.png) no-repeat center;
     background-size: cover;
 }
-.container{
+/* .container{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    /* overflow: hidden; */
+    /* overflow: hidden; 
     text-align: center;
     color: white;
     font-weight: 700;
-}
-.container h1{
+} */
+
+/* .container h1{
     font-size: 80px;
     letter-spacing: 0.2em;
     font-family: 'Gochi hand';
     font-weight: bolder;
     color: white;
-}
-.des{
+} */
+/* .des{
     margin: 20px;
     display: block;
     font-size: 20px;
     font-weight: bolder;
     text-shadow: 0 0 10px black;
-}
+} */
 .btn{
     color: #313131;
     padding: 10px 24px;
